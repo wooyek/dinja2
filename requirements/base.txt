@@ -1,0 +1,57 @@
+# Dinja2 dependencies (excluding django which is set in appropriate version by tox)
+# For development we keep them unfreezed to work and test on newest versions as soon as they are released
+
+# Here are some popular dependencies
+pytz
+pycountry
+isoweek
+markdown
+html2text
+requests
+psycopg2
+django-environ
+django-pascal-templates
+django-localflavor
+django-formtools
+django_email_queue
+django-powerbank
+django-polymodels
+django-reversion
+jinja2-highlight
+django-import-export
+django-betterforms
+raven
+
+# Storages
+#django-storages
+-e git+https://github.com/wooyek/django-storages@feature/gcs-no-storage-admin-support#egg=django-storages
+google-cloud
+google-cloud-storage
+
+# Assets
+django_assets
+webassets>=0.11.1
+yuicompressor
+
+# Images
+# easy-thumbnails
+# sorl-thumbnail
+# pillow
+# django-filer==1.2.6rc2 # This has old font-awesome file, watch out for overwrites
+
+# Background jobs
+amqp==2.1.4
+-e git+https://github.com/wooyek/celery#egg=celery
+
+# API
+djangorestframework-jsonapi
+djangorestframework
+django-filter
+agithub
+-e git+https://github.com/wooyek/python-linkedin@master#egg=python_linkedin
+-e git+https://github.com/wooyek/stack.py#egg=stackpy
+opencage
+
+# Local proprietary packages
+--find-links=requirements
+
